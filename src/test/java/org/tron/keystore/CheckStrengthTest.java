@@ -105,7 +105,7 @@ public class CheckStrengthTest {
   }
 
   @Test
-  public void getPasswordLevelMidium() {
+  public void getPasswordLevelMedium() {
     // Medium passwords (level 4-6) → MIDIUM
     // A simple 8-char password with mixed types
     CheckStrength.LEVEL level = CheckStrength.getPasswordLevel("Abc12345".toCharArray());
