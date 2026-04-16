@@ -41,16 +41,13 @@ sourceSets {
 buildscript {
     repositories {
         mavenLocal()
-        maven {
-            url "https://cdn.lfrs.sl/repository.liferay.com/nexus/content/groups/public"
-        }
+        gradlePluginPortal()
         mavenCentral()
     }
 
     dependencies {
         classpath 'com.github.jengelman.gradle.plugins:shadow:5.2.0'
         classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.12'
-        classpath "gradle.plugin.com.liferay:gradle-plugins-node:7.0.2"
     }
 }
 
